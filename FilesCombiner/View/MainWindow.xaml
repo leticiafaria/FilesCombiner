@@ -1,0 +1,20 @@
+﻿<Window x:Class="FilesCombiner.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FilesCombiner"
+        mc:Ignorable="d"
+        Title="Combinador de Arquivos do Projeto" Height="165" Width="800">
+    <Grid>
+        <Label Content="Pasta do Projeto:" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFolderPath" HorizontalAlignment="Left" Margin="140,24,0,0"
+                 TextWrapping="Wrap" VerticalAlignment="Top" Width="400" IsReadOnly="True"/>
+        <Button Content="Selecionar Pasta" HorizontalAlignment="Left" Margin="550,24,0,0"
+                VerticalAlignment="Top" Width="120" Click="BtnSelectFolder_Click"/>
+
+        <Button Content="Combinar Arquivos" HorizontalAlignment="Left" Margin="20,70,0,0"
+                VerticalAlignment="Top" Width="150" Click="BtnCombineFiles_Click"/>
+
+    </Grid>
+</Window>
