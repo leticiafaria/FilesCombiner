@@ -12,13 +12,13 @@ A aplicação é inteligente e **ignora automaticamente pastas e arquivos desnec
 
 * **Seleção de Pasta do Projeto**: Permite ao usuário selecionar visualmente a pasta raiz do projeto que deseja combinar os arquivos.
 * **Combinação Inteligente de Arquivos**: Percorre recursivamente todas as subpastas e arquivos dentro do diretório do projeto selecionado, garantindo uma cobertura completa.
+* **Geração de Arquivo Único**: Salva todo o conteúdo combinado em um arquivo de texto especificado pelo usuário, com total controle sobre o nome e o local.
 * **Exclusão Automática de Arquivos e Pastas Irrelevantes**: Ignora pastas como `.vs`, `bin`, `obj`, `.git`, `Deploy.hw.k8s`, `Deploy.k8s`, `.vscode`, `e2e`, `assets`, `environments`, `configs`, `core`. Também exclui arquivos com extensões como `.dll`, `.exe`, `.pdb`, `.zip`, `.rar`, `.tmp`, `.log`, `.bak`, `.json`, `.config`, `.sln`, `.csproj`, `.gitignore`, `.md`, `.conf`, `.prettierignore`, `.prettierrc`, `.browserslistrc`, `.editorconfig`, `.ico` e nomes específicos como `Dockerfile`, `karma.conf.js`, `polyfills.ts`. Isso assegura um output limpo e focado no código-fonte.
 
-Para cenários de projeto distintos que não se enquadram nas configurações atuais de backend e backoffice, será necessário realizar ajustes manuais na classe `FileCombinerService`. Especificamente, as seguintes propriedades (`HashSet<string>`) devem ser comentadas ou modificadas para adequação:
+Para cenários de projeto distintos que não se enquadram nas configurações atuais, será necessário realizar ajustes manuais na classe `FileCombinerService`. Especificamente, as seguintes propriedades (`HashSet<string>`) devem ser comentadas ou modificadas para adequação:
 * `ignoredFolderNames`: Linhas: `73 até 90`, abrangendo as `#region Exceções Backend` e `#region Exceções Frontend`.
 * `ignoredFileExtensions`: Linhas: `96 até 112`, abrangendo as `#region Exceções Backend` e `#region Exceções Frontend`.
 * `ignoredSpecificFileNames`: Linhas: `126 até 129`, definem nomes de arquivos específicos a serem ignorados.
-* **Geração de Arquivo Único**: Salva todo o conteúdo combinado em um arquivo de texto especificado pelo usuário, com total controle sobre o nome e o local.
 
  ---
 
@@ -82,7 +82,7 @@ Para cenários de projeto distintos que não se enquadram nas configurações at
     * Será aberta uma janela para você **escolher onde salvar o arquivo combinado** e qual nome dar a ele. Por padrão, ele sugerirá um nome útil como `files-combined_YYYY-MM-DD-HH-MM-SS.txt`.
     * Selecione o local e o nome do arquivo de saída e clique em **"Salvar"**.
 4.  **Verifique o Resultado**:
-    * Ao finalizar a consolidação dos arquivos será exibida a caixa de diálogo acima.
+    * Ao finalizar a consolidação dos arquivos será exibido um alerta com a confirmação.
 
 ### Logs 📄
 
