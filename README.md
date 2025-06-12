@@ -47,7 +47,7 @@ Para cenários de projeto distintos que não se enquadram nas configurações at
 ### Passos para Uso
 
 1.  **Faça o download do projeto**:
-    Clone o projeto do GitHub. Acesse a documentação de como clonar um repositório [**aqui**](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository).
+    *Clone o projeto do GitHub. Acesse a documentação de como clonar um repositório [**aqui**](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository).
 #### Com Visual Studio
 
 1.  **Abrir o Projeto**:
