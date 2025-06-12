@@ -1,7 +1,5 @@
 # 💻 Sobre o Files Combiner 
 
----
-
 ## 🚀 Visão Geral do Projeto
 
 O `FilesCombiner` é uma aplicação desktop desenvolvida em **WPF (.NET 9)** que permite **combinar o conteúdo de múltiplos arquivos** de um diretório de projeto em um único arquivo de texto. A ferramenta é útil para gerar um "snapshot" do código-fonte, facilitando a análise, compartilhamento ou documentação do projeto.
